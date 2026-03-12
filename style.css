@@ -2942,3 +2942,47 @@ h4.small-title {
 .ceylantek-imza a:hover {
     color: #fff !important;
 }
+
+/*================================================
+    WhatsApp & Telefon Sabit Butonları CSS
+=================================================*/
+.fixed-contact-buttons {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.fixed-contact-buttons a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #fff !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.wp-btn { background-color: #25D366; }
+.wp-btn:hover { background-color: #1ebe57; transform: scale(1.1); }
+.call-btn { background-color: #007bff; }
+.call-btn:hover { background-color: #0056b3; transform: scale(1.1); }
+
+/* Randevu Formu Tarih/Saat Görünümü */
+.request-quate-form-style input[type="date"],
+.request-quate-form-style input[type="time"] {
+    background: transparent;
+    color: #f9f9f9;
+    border-bottom: 1px solid #707070;
+    cursor: text;
+}
+.request-quate-form-style input[type="date"]::-webkit-calendar-picker-indicator,
+.request-quate-form-style input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
